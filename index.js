@@ -195,6 +195,7 @@ function Inverter(transformer) {
         pos++;
         posInChunk++;
       }
+      posInChunk = 0;
     }
     return -1;
   }
