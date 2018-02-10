@@ -1,0 +1,20 @@
+{
+  "name": "stream-promise-inverter",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hdon/stream-promise-inverter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hdon/stream-promise-inverter/issues"
+  },
+  "homepage": "https://github.com/hdon/stream-promise-inverter#readme"
+}
