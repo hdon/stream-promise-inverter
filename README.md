@@ -7,13 +7,14 @@ By utilizing [IoC] and [async+await], you can write better code:
 
 ```javascript
 const Inverter = require('./stream-promise-inverter');
+const LF = '\n'.charCodeAt(0);
 process.stdin.pipe(new Inverter(async inverter => {
   let lineBuf;
   /* get first line */
-  lineBuf = await inverter.readUntil(10);
+  lineBuf = await inverter.readUntil(LF);
   console.log('a>', lineBuf.toString('utf8'))
   /* get second line */
-  lineBuf = await inverter.readUntil(10);
+  lineBuf = await inverter.readUntil(LF);
   console.log('b>', lineBuf.toString('utf8'))
   inverter.end();
 }))
